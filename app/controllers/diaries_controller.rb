@@ -4,7 +4,7 @@ class DiariesController < ApplicationController
   # GET /diaries
   # GET /diaries.json
   def index
-    @diaries = Diary.all
+    @diaries = Diary.recent.all
   end
 
   # GET /diaries/1

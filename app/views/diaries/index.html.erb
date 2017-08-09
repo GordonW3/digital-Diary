@@ -1,22 +1,25 @@
-<p id="notice"><%= notice %></p>
+<div class='container'>
+  <p id="notice"><%= notice %></p>
 
- <div class="blog-header">
-        <h1 class="blog-title">An Unexpected Journey</h1>
-        <p class="lead blog-description">The official Digital Diary for Cami and Gordon's Married Life</p>
-      </div>
+   <div class="blog-header">
+          <h1 class="blog-title">An Unexpected Journey</h1>
+          <p class="lead blog-description">The official Digital Diary for Cami and Gordon's Married Life</p>
+        </div>
 
-<%= link_to 'New Diary', new_diary_path %>
+  <%= link_to 'New Diary', new_diary_path %>
 
-<% @diaries.each do |diary| %>
-  <div class="blog-post">
-    <h2 class="blog-post-title"><%= diary.title %></h2>
-    <p class="blog-post-meta"><%= Date.today %></p>
-    <br>
-    <%= link_to "#{diary.image}", diary %>
-    <%= link_to 'Edit', edit_diary_path(diary) %>
-    <%= link_to 'Destroy', diary, method: :delete, data: { confirm: 'Are you sure?' } %>
-  </div> 
-<% end %>
+  <% @diaries.each do |diary| %>
+    <div class="blog-post">
+      <h2 class="blog-post-title"><%= link_to diary.title, diary %></h2>
+      <p class="blog-post-meta"><%= Date.today %></p>
+      <br>
+      <%= image_tag diary.image %>
+      
+      <%= link_to 'Edit', edit_diary_path(diary) %>
+      <%= link_to 'Destroy', diary, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </div> 
+  <% end %>
+</div>
 
 
 
