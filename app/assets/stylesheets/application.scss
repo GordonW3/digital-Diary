@@ -1,20 +1,77 @@
 @import "bootstrap";
 
+/*Nav bar styling begin*/
+
+.navbar{
+	box-shadow: 0px 10px 5px rgba(0,0,0,0.5);
+}
+
 .nav_background {
-	background-color: #e02c2c;
+	background-image: url(oldWood.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .cute-saying p {
 	margin-right: 30px;
-	color: #adfffc;
+	color: white;
 	font-family: 'Courgette', cursive;
-	font-weight: strong;
+	background-color: rgba(140, 69, 11, 0.3);
+	padding: 10px;
+	margin-top: 23px;
+	font-size: 20px;
 }
 .nav-link {
-	color: #adfffc;
+	margin-top: 23px;
+	font-size: 20px;
+	color: white;
 	font-family: 'Courgette', cursive;
+	background-color: rgba(140, 69, 11, 0.3);
 }
 
 .nav-link:hover {
-	color: red;
+	color: green;
 }
+
+.navbar-brand {
+	color: white;
+	font-size: 60px;
+}
+/*Nav bar styling End*/
+
+
+
+/*Show page styling Begin*/
+.show-page-image {
+	width: 100%;
+	
+}
+
+/*Show page styling end*/
+
+.blog-header {
+	color: white;
+	text-align: center;
+	background-color: rgba(140, 69, 11, 0.3);
+}
+.blog-post {
+	text-align: center;
+}
+
+.diary-background {
+	margin-top: -18px;
+	background-image: url(enchented_forest_rainbow.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/*home page styling begin*/
+
+.home_background {
+	background-image: url(camera_outside.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*home page styling end*/

@@ -1,19 +1,26 @@
-<p id="notice"><%= notice %></p>
-<p>SHOWING STUFF</p>
-  <strong>Title:</strong>
-<p>
-  <%= @diary.title %>
-</p>
+<div class="container">
+	<p id="notice"><%= notice %></p>
+	<div class="row">
+		
+			<p class="show-page-image">
+			  <%= image_tag @diary.image %>
+			</p>
+		
+		
+		  <strong>Title:</strong>
+		<p>
+		  <%= @diary.title %>
+		</p>
 
-  <strong>Body:</strong>
-<p>
-  <%= @diary.body %>
-</p>
+		  <strong>Body:</strong>
+		<p>
+		  <%= @diary.body %>
+		</p>
 
-  <strong>Image:</strong>
-<p>
-  <%= image_tag @diary.image %>
-</p>
+		
+		
+	</div>
 
-<%= link_to 'Edit', edit_diary_path(@diary) %> |
-<%= link_to 'Back', diaries_path %>
+	<%= link_to 'Edit', edit_diary_path(@diary) %> |
+	<%= link_to 'Back', diaries_path %>
+</div>
