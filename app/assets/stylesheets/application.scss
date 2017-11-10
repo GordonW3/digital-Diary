@@ -1,5 +1,27 @@
 @import "bootstrap";
 
+/*home page styling begin*/
+
+.home_background {
+	background-image: url(camera_outside.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.home_saying{
+	color: white;
+	font-size: 30px;
+	background-color: rgba(255, 255, 255, 0.2);
+	width: 50%;
+	border-radius: 10px;
+	margin-top: 100px;
+	font-family: 'Courgette', cursive;
+	text-align: center;
+}
+
+/*home page styling end*/
+
 /*Nav bar styling begin*/
 
 .navbar{
@@ -14,12 +36,12 @@
 
 .cute-saying p {
 	margin-right: 30px;
-	color: white;
+	color: #AC8762;
 	font-family: 'Courgette', cursive;
-	background-color: rgba(140, 69, 11, 0.3);
+	/*background-color: rgba(140, 69, 11, 0.3);*/
 	padding: 10px;
 	margin-top: 23px;
-	font-size: 20px;
+	font-size: 30px;
 }
 .nav-link {
 	margin-top: 23px;
@@ -34,8 +56,10 @@
 }
 
 .navbar-brand {
-	color: white;
+	color: #53C7FD;
 	font-size: 60px;
+	text-shadow: 2px 2px #E9E2A4;
+	font-family: 'Gloria Hallelujah', cursive;
 }
 /*Nav bar styling End*/
 
@@ -49,29 +73,22 @@
 
 /*Show page styling end*/
 
-.blog-header {
+#blog-header {
 	color: white;
 	text-align: center;
-	background-color: rgba(140, 69, 11, 0.3);
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 10px;
+
 }
 .blog-post {
 	text-align: center;
 }
 
-.diary-background {
-	margin-top: -18px;
+#diary-background {
+	margin-top: -16px;
 	background-image: url(enchented_forest_rainbow.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-/*home page styling begin*/
 
-.home_background {
-	background-image: url(camera_outside.jpg);
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-/*home page styling end*/
